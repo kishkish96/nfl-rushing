@@ -1,8 +1,21 @@
-.home-container {
-  background-color: lightsteelblue;
-  width: 100%;
+.stats-container {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+
+.paginator-export-container {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  margin: 0 auto;
+  width: 90%;
+  justify-items: flex-end
+}
+
+.export-button {
+  height: 40px;
+}
+
+.filter-container {
+  width: 90%;
+  margin: 0 auto;
 }
