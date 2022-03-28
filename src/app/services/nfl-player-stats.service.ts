@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class NflPlayerStatsService {
     private httpClient: HttpClient
   ) { }
 
-  getNFLPlayerStats() {
+  getNFLPlayerStats(): Observable<any> {
     return this.httpClient.get("assets/rushing.json");
   }
 }

@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort'; 
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableExporterModule } from 'mat-table-exporter';
 
 import { AppComponent } from './app.component';
 
@@ -20,7 +24,11 @@ import { AppComponent } from './app.component';
     MatButtonModule,
     HttpClientModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableExporterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
