@@ -1,27 +1,59 @@
-# NflRushingApp
+# theScore "the Rush" Interview Challenge
+At theScore, we are always looking for intelligent, resourceful, full-stack developers to join our growing team. To help us evaluate new talent, we have created this take-home interview question. This question should take you no more than a few hours.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+**All candidates must complete this before the possibility of an in-person interview. During the in-person interview, your submitted project will be used as the base for further extensions.**
 
-## Development server
+### Why a take-home challenge?
+In-person coding interviews can be stressful and can hide some people's full potential. A take-home gives you a chance work in a less stressful environment and showcase your talent.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We want you to be at your best and most comfortable.
 
-## Code scaffolding
+### A bit about our tech stack
+As outlined in our job description, you will come across technologies which include a server-side web framework (like Elixir/Phoenix, Ruby on Rails or a modern Javascript framework) and a front-end Javascript framework (like ReactJS)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Challenge Background
+We have sets of records representing football players' rushing statistics. All records have the following attributes:
+* `Player` (Player's name)
+* `Team` (Player's team abbreviation)
+* `Pos` (Player's postion)
+* `Att/G` (Rushing Attempts Per Game Average)
+* `Att` (Rushing Attempts)
+* `Yds` (Total Rushing Yards)
+* `Avg` (Rushing Average Yards Per Attempt)
+* `Yds/G` (Rushing Yards Per Game)
+* `TD` (Total Rushing Touchdowns)
+* `Lng` (Longest Rush -- a `T` represents a touchdown occurred)
+* `1st` (Rushing First Downs)
+* `1st%` (Rushing First Down Percentage)
+* `20+` (Rushing 20+ Yards Each)
+* `40+` (Rushing 40+ Yards Each)
+* `FUM` (Rushing Fumbles)
 
-## Build
+In this repo is a sample data file [`rushing.json`](/rushing.json).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##### Challenge Requirements
+1. Create a web app. This must be able to do the following steps
+    1. Create a webpage which displays a table with the contents of [`rushing.json`](/rushing.json)
+    2. The user should be able to sort the players by _Total Rushing Yards_, _Longest Rush_ and _Total Rushing Touchdowns_
+    3. The user should be able to filter by the player's name
+    4. The user should be able to download the sorted data as a CSV, as well as a filtered subset
+    
+2. The system should be able to potentially support larger sets of data on the order of 10k records.
 
-## Running unit tests
+3. Update the section `Installation and running this solution` in the README file explaining how to run your code
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Submitting a solution
+1. Download this repo
+2. Complete the problem outlined in the `Requirements` section
+3. In your personal public GitHub repo, create a new public repo with this implementation
+4. Provide this link to your contact at theScore
 
-## Running end-to-end tests
+We will evaluate you on your ability to solve the problem defined in the requirements section as well as your choice of frameworks, and general coding style.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Help
+If you have any questions regarding requirements, do not hesitate to email your contact at theScore for clarification.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Installation and running this solution
+1. Run "npm install -g @angular/cli"
+2. Run "ng serve" - this should show a URL when finished running (http://localhost:4200/)
+3. This URL should show the table with all the requirements from above
