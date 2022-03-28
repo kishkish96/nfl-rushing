@@ -12,10 +12,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableExporterModule } from 'mat-table-exporter';
 
 import { AppComponent } from './app.component';
+import { NflPlayerStatsComponent } from './components/nfl-player-stats/nfl-player-stats.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NflPlayerStatsComponent
   ],
   imports: [
     BrowserModule,
